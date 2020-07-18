@@ -2,7 +2,10 @@ def square_array(array)
   count = 0
   new_array = []
   while count < array.length do
-    {|num| num ** 2}
+    {
+      num ** 2
+      
+    }
     new_array.push(array[count].to_s) # OR new_array << array[count].to_s
   count += 1
   end
